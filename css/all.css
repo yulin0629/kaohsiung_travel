@@ -13,3 +13,27 @@
 .clearfix {
     *zoom: 1;
 }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #559AC8;
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer * {
+    margin-bottom: 15px;
+}
+#footer *:last-child {
+    margin-bottom: 0;
+}
+
+.footer-source {
+    color: #FFD366;
+}
