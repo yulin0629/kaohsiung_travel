@@ -156,9 +156,14 @@ a {
 .zone-list>li{
     width: 48%;
     background-color: white;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.03);
     position: relative;
     margin: 18px 1%;
+    transition: all 0.3s ease;
+}
+
+.zone-list>li:hover {
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .spot-img {
@@ -181,11 +186,11 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.6s ease;
 }
 
 .zone-list>li:hover .spot-img img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .spot-img .name {
@@ -205,15 +210,13 @@ a {
 
 .spot-information>li {
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .spot-information>li .icon {
     width: 18px;
     text-align: center;
-}
-
-.spot-information>li p, .spot-information>li address {
-    display: inline;
 }
 
 .spot-information>li:last-child {
@@ -255,19 +258,23 @@ a {
 .page-selection a {
     margin-right: 24px;
     color: #4A4A4A;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .page-list a{
-    min-width: 24px;
-    min-height: 24px;
+    padding: 8px 12px;
     display: inline-block;
     text-align: center;
-    line-height: 24px;
+    border: 1px solid black;
 }
 
-.page-selection a.active {
+.page-list a.active {
     background-color: orange;
-    border-radius: 50%;
+    color: white;
+    border: 1px solid transparent;
 }
 
 .page-prev.disabled, .page-next.disabled {

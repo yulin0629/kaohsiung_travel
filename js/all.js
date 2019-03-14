@@ -23,7 +23,7 @@ initialSelect();
 
 
 
-function onZoneChanged() {
+function onZoneChanged(e) {
     currentPage = 0;
     getZoneSpotData(e.target.value);
     updateHeader(e.target.value);
