@@ -3,11 +3,11 @@
 }
 
 .clearfix:after {
-    content:".";
-    display:block;
-    height:0;
-    visibility:hidden;
-    clear:both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
 }
 
 .clearfix {
@@ -17,6 +17,41 @@
 .container {
     max-width: 960px;
     margin: 0 auto;
+}
+
+.banner {
+    height: 380px;
+    background: url(../images/Hero.png) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: auto;
+}
+
+.banner-header {
+    color: white;
+    font-size: 40px;
+    line-height: 41px;
+    letter-spacing: 3.89px;
+    margin-top: 89px;
+    margin-bottom: 96px;
+}
+
+.banner #distinct-select {
+    width: 452px;
+    
+}
+
+#distinct-select {
+    background: url(../images/icons_down.png) no-repeat;
+    background-color: rgba(255, 255, 255, 0.70);
+    background-position: calc(100% - 20px) 50%;
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 9.5px 9px 9.5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 #footer {
@@ -30,6 +65,7 @@
 #footer * {
     margin-bottom: 15px;
 }
+
 #footer *:last-child {
     margin-bottom: 0;
 }
