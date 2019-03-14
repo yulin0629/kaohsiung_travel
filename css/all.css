@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.body {
+    font-family: sans-serif;
+}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -74,8 +78,15 @@
 }
 
 .content {
+    padding-top: 65px;
     background-color: #F7F7F7;
-    height: 500px;
+}
+
+.content-header {
+    font-size: 36px;
+    color: #8A82CC;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .hot-district-outer {
@@ -128,4 +139,85 @@
 
 #hot-district-list li:nth-child(3) {
     background: #F5D005;
+}
+
+.zone-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 24px 0 24px;
+}
+
+.zone-list>li{
+    width: 48%;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin-bottom: 36px;
+    position: relative;
+    margin: 0 1% 36px 1%;
+}
+
+.spot-img {
+    background: url(https://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960) no-repeat center;
+    background-size: cover;
+    color: white;
+    height: 155px;
+    background-color: darkgray;
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.spot-img .name {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.spot-img .zone {
+    font-size: 16px;
+    line-height: 19px;
+}
+.spot-information {
+    padding: 22px;
+}
+
+.spot-information>li {
+    margin-bottom: 16px;
+}
+
+.spot-information>li .icon {
+    width: 18px;
+    text-align: center;
+}
+
+.spot-information>li p, .spot-information>li address {
+    display: inline;
+}
+
+.spot-information>li:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    margin-right: 8px;
+    display: inline-block;
+}
+
+
+
+.open-hour {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.spot-tag {
+    position: absolute;
+    right: 24px;
+    bottom: 19px;
+    font-size: 16px;
+}
+
+.go-top {
+    float: right;
 }

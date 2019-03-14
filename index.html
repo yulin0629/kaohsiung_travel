@@ -11,7 +11,7 @@
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:image" content="preview.jpg">
     <meta content="從一個sketch檔開始，設計 HTML 和 CSS，然後用 JavaScript 去高雄市政府撈高雄的景點資料，提供分頁顯示、熱門行政區、按行政區顯示的功能。" name="description">
-    <meta content="網頁設計, 練習, 切版, 前端, HTML, CSS" name="keywords">
+    <meta content="網頁設計, 切版, 前端, HTML, CSS, JavaScript" name="keywords">
     <meta content="Yulin Wang" name="author">
     <title>高雄旅遊網</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -20,7 +20,7 @@
 
 <body>
     <div class="container">
-        <div class="banner">
+        <div id="banner" class="banner">
             <h1 class="banner-header">高雄旅遊資訊</h1>
             <select name="distinct-select" id="distinct-select">
                 <option disabled selected value>- - 請選擇行政區 - -</option>
@@ -38,7 +38,100 @@
             </div>
             <div class="hot-district-bottom"></div>
         </div>
-        <div class="content"></div>
+        <div class="content clearfix">
+            <h2 class="content-header">三民區</h2>
+            <ul class="zone-list">
+                <li>
+                    <div class="spot-img">
+                        <h3 class="name">
+                            高雄願景館
+                        </h3>
+                        <h4 class="zone">三民區</h4>
+                    </div>
+                    <ul class="spot-information">
+                        <li class="open-hour">
+                            <div class="icon">
+                                <img src="images/icons_clock.png" alt="icon clock">
+                            </div>
+                            <p> 週二至週日 10:00-18:00，每週一公休</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_pin.png" alt="icon pin">
+                            </div>
+                            <address class="location">高雄市三民區建國二路318號</address>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_phone.png" alt="icon phone">
+                            </div>
+                            <p class="phone-number" href="tel:">886-7-2363357</p>
+                        </li>
+                    </ul>
+                    <div class="spot-tag"><img class="icon" src="images/icons_tag.png" alt="icon tag">免費參觀</div>
+                </li>
+                <li>
+                    <div class="spot-img">
+                        <h3 class="name">
+                            高雄願景館
+                        </h3>
+                        <h4 class="zone">三民區</h4>
+                    </div>
+                    <ul class="spot-information">
+                        <li class="open-hour">
+                            <div class="icon">
+                                <img src="images/icons_clock.png" alt="icon clock">
+                            </div>
+                            <p> 週二至週日 10:00-18:00，每週一公休</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_pin.png" alt="icon pin">
+                            </div>
+                            <address class="location">高雄市三民區建國二路318號</address>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_phone.png" alt="icon phone">
+                            </div>
+                            <p class="phone-number" href="tel:">886-7-2363357</p>
+                        </li>
+                    </ul>
+                    <div class="spot-tag"><img class="icon" src="images/icons_tag.png" alt="icon tag">免費參觀</div>
+                </li>
+                <li>
+                    <div class="spot-img">
+                        <h3 class="name">
+                            高雄願景館
+                        </h3>
+                        <h4 class="zone">三民區</h4>
+                    </div>
+                    <ul class="spot-information">
+                        <li class="open-hour">
+                            <div class="icon">
+                                <img src="images/icons_clock.png" alt="icon clock">
+                            </div>
+                            <p> 週二至週日 10:00-18:00，每週一公休</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_pin.png" alt="icon pin">
+                            </div>
+                            <address class="location">高雄市三民區建國二路318號</address>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/icons_phone.png" alt="icon phone">
+                            </div>
+                            <p class="phone-number" href="tel:">886-7-2363357</p>
+                        </li>
+                    </ul>
+                    <div class="spot-tag"><img class="icon" src="images/icons_tag.png" alt="icon tag">免費參觀</div>
+                </li>
+            </ul>
+            <div class="page-selection"></div>
+            <a href="#banner" class="go-top"><img src="images/btn_goTop.png" alt="go top"></a>
+        </div>
         <footer id="footer">
             <p>高雄旅遊網</p>
             <div class="footer-source">資料來源：高雄市政府</div>
