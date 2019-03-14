@@ -3,9 +3,11 @@ var zones = new Set(data.result.records.map(x => x.Zone));
 zones = Array.from(zones);
 // DOM
 var distinct_select = document.getElementById('distinct-select');
+var hot_distinct_list = document.getElementById('hot-district-list');
 
 // Register Event
 distinct_select.addEventListener('change', onZoneChanged);
+hot_distinct_list.addEventListener('click', onHotDistinctListClick);
 
 // View
 initialSelect();
@@ -14,7 +16,16 @@ initialSelect();
 
 function onZoneChanged(e) {
     let spots = getZoneSpotData(e.target.value);
-    updateSpots(spots);
+    updateSpots(spots, e.target.value);
+}
+
+function onHotDistinctListClick(e) {
+    console.log(e.target.nodeName);
+    if (e.target.nodeName !== 'LI') {
+        return;
+    }
+    let spots = getZoneSpotData(e.target.textContent);
+    updateSpots(spots, e.target.textContent);
 }
 
 function getZoneSpotData(zone) {
@@ -33,9 +44,9 @@ function initialSelect() {
     }
 }
 
-function updateSpots(spots) {
+function updateSpots(spots, zoneName) {
     let header = document.querySelector('.content-header');
-    header.textContent = distinct_select.value;
+    header.textContent = zoneName;
 
     let zone_list = document.querySelector('.zone-list');
     zone_list.innerHTML = '';

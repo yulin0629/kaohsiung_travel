@@ -168,6 +168,7 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
 }
 
 .spot-img img {
@@ -177,6 +178,11 @@
     width: 100%;
     top: 0;
     left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.zone-list>li:hover .spot-img img {
+    transform: scale(1.1);
 }
 
 .spot-img .name {
