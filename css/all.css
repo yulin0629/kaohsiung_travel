@@ -159,25 +159,36 @@
 }
 
 .spot-img {
-    background: url(https://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960) no-repeat center;
-    background-size: cover;
+    /* background: url(https://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960) no-repeat center; */
+    /* background-size: cover; */
     color: white;
     height: 155px;
-    background-color: darkgray;
     padding: 14px 22px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
+}
+
+.spot-img img {
+    position: absolute;
+    height: 155px;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .spot-img .name {
     font-size: 24px;
     line-height: 28px;
+    z-index: 0;
 }
 
 .spot-img .zone {
     font-size: 16px;
     line-height: 19px;
+    z-index: 0;
 }
 .spot-information {
     padding: 22px;
