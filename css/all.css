@@ -80,6 +80,7 @@
 .content {
     padding-top: 65px;
     background-color: #F7F7F7;
+    position: relative;
 }
 
 .content-header {
@@ -219,5 +220,7 @@
 }
 
 .go-top {
-    float: right;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 }
