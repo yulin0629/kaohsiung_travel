@@ -20,6 +20,9 @@ page_next.addEventListener('click', onPageNextClick);
 
 // View
 initialSelect();
+getZoneSpotData('苓雅區');
+updateHeader('苓雅區');
+updateContent();
 
 
 
@@ -76,7 +79,7 @@ function onPageNextClick(e) {
 
 
 
-function getZoneSpotData(zone, start=0, end=10) {
+function getZoneSpotData(zone, start = 0, end = 10) {
     let spots = data.result.records.filter(x => x.Zone == zone);
     currentSpots = spots;
 }
@@ -92,12 +95,18 @@ function initialSelect() {
     }
 }
 
+function updateContent() {
+    let start = currentPage * SPOTS_SHOW_PER_ZONE;
+    updateSpots(start, SPOTS_SHOW_PER_ZONE);
+    updatePageList();
+}
+
 function updateHeader(zoneName) {
     let header = document.querySelector('.content-header');
     header.textContent = zoneName;
 }
 
-function updateSpots(start=0, end=Infinity) {
+function updateSpots(start = 0, end = Infinity) {
     spots = currentSpots
     let zone_list = document.querySelector('.zone-list');
     zone_list.innerHTML = '';
@@ -143,7 +152,7 @@ function updatePageList() {
     let length = Math.ceil(currentSpots.length / SPOTS_SHOW_PER_ZONE);
     for (let i = 0; i < length; i++) {
         let active = i === currentPage ? 'active' : '';
-        list.innerHTML += `<a class="${active}" data-index="${i}" href="">${i+1}</a>`
+        list.innerHTML += `<a class="${active}" data-index="${i}" href="">${i + 1}</a>`
     }
 
     if (currentPage <= 0) {
@@ -153,7 +162,7 @@ function updatePageList() {
         page_prev.classList.remove('disabled');
     }
 
-    if (currentPage >= length-1) {
+    if (currentPage >= length - 1) {
         page_next.classList.add('disabled');
     } else {
         page_next.classList.remove('disabled');
