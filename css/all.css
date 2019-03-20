@@ -44,11 +44,11 @@ body {
     margin-bottom: 96px;
 }
 
-.header #distinct-select {
+.header .distinct-select {
     width: 452px;
 }
 
-#distinct-select {
+.distinct-select {
     background: url(../images/icons_down.png) no-repeat;
     background-color: rgba(255, 255, 255, 0.70);
     background-position: calc(100% - 20px) 50%;

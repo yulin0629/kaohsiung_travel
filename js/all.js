@@ -5,7 +5,7 @@ const SPOTS_SHOW_PER_ZONE = 5;
 let currentSpots = [];
 let currentPage = 0;
 // DOM
-var distinct_select = document.getElementById('distinct-select');
+var distinct_select = document.querySelector('.distinct-select');
 var hot_distinct_list = document.getElementById('hot-district-list');
 var page_list = document.querySelector('.page-list');
 var page_prev = document.querySelector('.page-prev');
