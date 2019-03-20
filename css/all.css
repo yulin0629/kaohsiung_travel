@@ -30,7 +30,7 @@ body {
 
 #header {
     height: 380px;
-    background: url(../images/Hero.png) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/Hero.png) center no-repeat;
     background-size: cover;
     text-align: center;
     overflow: auto;
@@ -39,8 +39,7 @@ body {
 .header-title {
     color: white;
     font-size: 40px;
-    line-height: 41px;
-    letter-spacing: 3.89px;
+    letter-spacing: 40px;
     margin-top: 89px;
     margin-bottom: 96px;
 }
