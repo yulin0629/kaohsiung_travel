@@ -6,7 +6,7 @@ let currentSpots = [];
 let currentPage = 0;
 // DOM
 var zone_select = document.querySelector('.zone-select');
-var hot_distinct_list = document.getElementById('hot-district-list');
+var hot_distinct_list = document.getElementById('hot-zone-list');
 var page_list = document.querySelector('.page-list');
 var page_prev = document.querySelector('.page-prev');
 var page_next = document.querySelector('.page-next');
