@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
 }
 
-.banner {
+.header {
     height: 380px;
     background: url(../images/Hero.png) center no-repeat;
     background-size: cover;
@@ -36,7 +36,7 @@ body {
     overflow: auto;
 }
 
-.banner-header {
+.header-header {
     color: white;
     font-size: 40px;
     line-height: 41px;
@@ -45,7 +45,7 @@ body {
     margin-bottom: 96px;
 }
 
-.banner #distinct-select {
+.header #distinct-select {
     width: 452px;
 }
 
