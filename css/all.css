@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
 }
 
-#header {
+.header {
     height: 380px;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/Hero.png) center no-repeat;
     background-size: cover;
@@ -45,20 +45,19 @@ body {
 }
 
 .header .zone-select {
-    width: 452px;
+    width: 500px;
 }
 
 .zone-select {
     background: url(../images/icons_down.png) no-repeat;
-    background-color: rgba(255, 255, 255, 0.70);
+    background-color: rgba(255, 255, 255, 0.80);
     background-position: calc(100% - 20px) 50%;
     border: 3px solid #FFFFFF;
     border-radius: 3px;
     font-size: 18px;
-    line-height: 21px;
     padding: 12px 9.5px 9px 9.5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    font-weight: 600;
+    outline: 0;
 }
 
 #footer {
