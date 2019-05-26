@@ -102,7 +102,7 @@ function updateContent() {
 }
 
 function updateHeader(zoneName) {
-    let header = document.querySelector('.content-header');
+    let header = document.querySelector('.content-title');
     header.textContent = zoneName;
 }
 

@@ -86,7 +86,7 @@ body {
     position: relative;
 }
 
-.content-header {
+.content-title {
     font-size: 36px;
     color: #8A82CC;
     text-align: center;
@@ -267,8 +267,15 @@ li .spot-img:before {
     margin-bottom: 36px;
 }
 
-.page-selection a {
+.page-selection>a:first-child {
     margin-right: 24px;
+}
+
+.page-selection>a:last-child {
+    margin-left: 16px;
+}
+
+.page-selection a {
     color: #4A4A4A;
     text-transform: uppercase;
     font-family: sans-serif;
@@ -281,6 +288,7 @@ li .spot-img:before {
     display: inline-block;
     text-align: center;
     border: 1px solid black;
+    margin-right: 8px;
 }
 
 .page-list a.active {
